@@ -3,7 +3,6 @@ import './App.css'
 import { Sidebar } from './components/Sidebar/Sidebar'
 import DetailCharacter from './components/DetailCharacter';
 import { useState, useEffect } from 'react';
-import { NotFound } from './components/NotFound';
 
 const useHasQuery = (): boolean => {
   const location = useLocation();

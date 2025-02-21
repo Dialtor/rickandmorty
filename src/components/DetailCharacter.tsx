@@ -13,7 +13,7 @@ const DetailCharacter = () => {
   const [characterData, setCharacterData] = useState<Character>();
   const { id: characterId } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { loading, error, data } = useQuery<CharactersData>(GET_CHARACTERS, {
+  const { loading, data } = useQuery<CharactersData>(GET_CHARACTERS, {
     variables: { id: Number(characterId) || null },
   });
 

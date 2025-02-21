@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useState } from "react"
 import { Icon } from "@iconify/react";
 import Filter from "./components/Filter";
 import { FavoritesComponent } from "./components/FavoritesComponent";
@@ -9,7 +9,7 @@ export const Sidebar = () => {
   const [showFilter, setShowFilter] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [filters, setFilters] = useState({ character: 'All', species: 'All' });
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
+  const [isMobile] = useState(window.innerWidth < 1000);
 
   const handleFilterClick = () => {
     setShowFilter(!showFilter);
