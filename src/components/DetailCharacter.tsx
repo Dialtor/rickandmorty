@@ -64,7 +64,7 @@ const DetailCharacter = () => {
             <h2 className="text-2xl font-bold mb-2 text-[#1F2937] mt-3">{characterData?.name}</h2>
 
             <div className="mt-9 mb-5 h-18 border-b border-gray-300">
-              <p><strong className="font-medium text-lg text-black">Specie</strong></p>
+              <p><strong className="font-medium text-lg text-black">Specie.</strong></p>
               <p className="text-[#6B7280] text-lg">{characterData?.species}</p>
             </div>
 
